@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobil meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"> <!--initial-scale=sayfa açıldığında ne kadar yakınlaştırılacak ,
+      maximum-scale=kullanıcının sayfayı ne kadar yakınlaştırabileceği, 1 gerçek boyutu belirler, width=device-width=cihaza göre sayfa genişliğini ayarlar-->
+      <!-- site meta -->
+      <title>OOOPATİPATİ</title>
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Site ikonu -->
+      <link rel="icon" href="images/favicon.png" type="image/gif" />
+      <!-- Slayt css -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   </head>
+
+   <body class="main-layout">
+      <header>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-3 logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo"></a> </div>
+                     </div>
+                  </div>
+               </div>
+                <!--menü alanı-->
+               <div class="col-lg-9">
+                  <div class="menu-area">
+                     <div class="limit-box">
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li>
+                                 <a href="index.html">Anasayfa</a>
+                              </li>
+                              <li>
+                                 <a href="about.html">Hakkımızda</a>
+                              </li>
+                              <li>
+                                 <a href="donate.html">Bağış</a>
+                              </li>
+                              <li>
+                                 <a href="contact.html">İLETİŞİM</a>
+                              </li>
+                              <li>
+                                 <a href="cat/cat.html">KEDİ</a>
+                              </li>
+                              <li>
+                                 <a href="dog/dog.html">KÖPEK</a>
+                              </li>
+                              <li class="active">
+                                 <a href="login.html">GİRİŞ Yap</a>
+                              </li>
+                              <li>
+                                 <a href="signup.html">Üye Ol</a>
+                              </li>
+                              <li>
+                                 <img src="images/icon.png" alt="pati" />
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+     <br>
+
+<div class="About-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="aboutheading">
+               <center>
+               <h1>GİRİŞ YAP</h1>
+            </center>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+       
+<!--Giriş Yapma-->
+<form action="action_page.php">
+   <div class="container">    
+     <center>
+      <h3>Kullanıcı Adı</h3><br>
+       <input type="text" id="name" placeholder="Kullanıcı adınızı giriniz..."/> <br/>
+         <h3>Şifre</h3><br>
+       <input type="password" id="password1" placeholder="Şifrenizi giriniz..."></input> <br/>
+      <button type="button" onclick="control()">Giriş Yap</button>
+   <div class="container signin">
+  <p>Bir hesaba sahip değil misiniz? <a href="signup.html">Lütfen üye olunuz.</a></p>
+ </div>
+   </center>
+   </div>
+ </form>
+
+      <!-- Alt bilgi -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-3">
+                  <a href="index.html"><img src="images/footer_logo.png" alt="logo" /></a>
+               </div>
+               <div class="col-lg-2 col-md-6">
+                  <div class="footer_links">
+                     <h3>KISAYOL</h3>
+                     <ul>
+                        <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Anasayfa</a></li>
+                        <li><a href="cat/cat.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Kedi</a></li>
+                        <li><a href="dog/dog.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Köpek</a></li>
+                        <li><a href="donate.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Bağış</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i> İletişim</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-3">
+                  <ul class="contact_information">
+                     <li><span><img src="images/location_icon.png" alt="lokasyonikon" /></span><span class="text_cont">İstanbul<br>Türkiye</span></li>
+                     <li><span><img src="images/phone_icon.png" alt="telefonikon" /></span><span class="text_cont">507 000 00 00<br>545 000 00 00</span></li>
+                     <li><span><img src="images/mail_icon.png" alt="mailikon" /></span><span class="text_cont">pati@gmail.com<br>opatipati@gmail.com</span></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+       </footer>
+ 
+      <!-- Javascript dosyaları-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/login.js"></script>
+   </body>
+</html>

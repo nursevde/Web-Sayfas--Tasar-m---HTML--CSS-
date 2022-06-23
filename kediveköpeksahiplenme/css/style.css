@@ -1,0 +1,492 @@
+/*---------------------------------------------------------------------
+    Dosya adı: style.css
+---------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+body {
+	color: #666666;
+	font-size: 14px;
+	font-family: 'poppins', sans-serif;
+	line-height: 1.80857; /*satırlar arası yükseklik*/
+	font-weight: normal;
+    overflow-x: hidden; /*dikey olarak eleman kutusundan taşan kısım görünmez olur*/
+    background-color: #f0eaff;
+}
+
+a {
+	color: #1f1f1f;
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-transition: all .3s ease-in-out; /*geçiş süresi slayt 3 saniye chrome ve safari*/
+	-moz-transition: all .3s ease-in-out;/*mozilla*/
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;/*opera*/
+	transition: all .3s ease-in-out;
+}
+
+h3,
+h4,
+h5 {
+	letter-spacing: 0;/*Metinsel ifadelerin karakterleri arasındaki mesafelerin ayarlanması için kullanılan özellik*/
+	font-weight: normal;
+	position: relative; /*yazıyla resmi ilişkilendirdik böylece yazı resmin üstünde olabildi*/
+	padding: 0 0 10px 0; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+	font-weight: normal;
+	line-height: normal;/*satırlar arası yükseklik*/
+	margin: 0 /*dıştan boşluk verme*/
+}
+
+h1,h2,h3,h4{
+    font-family: inherit;
+    color: purple;
+}
+
+h3 {
+	font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+	font-size: 14px
+}
+
+ul,
+li,
+ol {
+	margin: 0px; 
+	padding: 0px; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+	list-style: none;
+}
+
+p {
+    margin: 0px; /*dıştan boşluk verme*/
+    font-weight: 300; /*yazı kalınlığı*/
+    font-size: 17px;
+    line-height: 30px; /*satırlar arası yükseklik*/
+    color: #212222;
+}
+
+a {
+	color: #222222;
+	text-decoration: none;
+	outline: none !important; /*dış çizgi özellikleri*/
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.full {
+	float: left;
+    width: 100%;
+    margin: 0;
+	padding: 0; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+}
+
+/*kedi, köpek anasayfasında ve iletişimde kullanıldı*/
+.layout_padding {
+	padding-top: 90px;
+	padding-bottom: 90px; /*üst, alt sırasıyla iç kenar boşlukları*/
+}
+
+.margin_top_30 {
+	margin-top: 30px !important; /*üst boşuk 30px*/
+}
+
+/*Menü arka Plan Rengi*/
+header {
+    background: rgb(104, 32, 104);
+    min-height: 122px;
+}
+/*Logo Arka Plan */
+.logo_section {
+    background: #f0eaff;
+    min-height: 122px;
+    text-align: center;
+    line-height: 120px; /*satırlar arası yükseklik*/
+}
+
+.logo_section::after {
+    position: absolute; /*logonun konumu sol üst köşe*/
+    width: 58px;
+    height: 122px;
+    right: -57px;
+}
+
+/*anasayfa butonunun rengi*/
+.menu-area-main li:hover a,
+.menu-area-main li:focus a {
+	color: #ff0000;
+}
+.menu-area-main li.active a {
+	color: #ff0000;
+}
+
+/*ana menü düzenlemeleri*/
+.main-menu {
+	text-align: center;
+}
+
+.main-menu ul {
+	margin: 0; /*dıştan boşluk verme*/
+	list-style-type: none;
+}
+
+.main-menu ul>li {
+	display: inline-block;
+	position: relative; /*yazıyla resmi ilişkilendirdik böylece yazı resmin üstünde olabildi*/
+}
+
+.main-menu ul > li a {
+    padding: 0 24px 0 24px; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+    line-height: 20px; /*satırlar arası yükseklik*/
+    font-size: 17px;
+    display: block;  /*önce ve sonra bir satır sonu*/
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase; /*metnin hepsini büyük harf yapma*/
+    letter-spacing: 0.5px; /*Metinsel ifadelerin karakterleri arasındaki mesafelerin ayarlanması için kullanılan özellik*/
+}
+.main-menu ul>li .sub-down li a {
+	color: #114c7d;
+	font-size: 15px;
+	text-transform: capitalize; /*sadece baş harfleri büyük harf yapma*/
+	font-weight: 300;
+	padding: 12px 5px;
+	position: relative; /*yazıyla resmi ilişkilendirdik böylece yazı resmin üstünde olabildi*/
+	border-bottom: solid #eee 1px;
+}
+
+.main-menu ul>li .sub-down li a:hover {
+	color: #111111;
+}
+
+.main-menu ul li:first-child {
+	margin-left: 0;
+}
+
+.main-menu ul>li>ul {
+	opacity: 0; /*saydamlık*/
+	position: absolute; /*Koordinat belirleyerek sayfada bir yere yerleştirmek*/
+	text-align: left;
+	top: 100%;
+	-webkit-transform: scaleY(0); /*scale değeri yardımı ile belirlene elemanın X ve Y ekseninde ölçeğini büyütebilir veya küçültebiliriz.*/
+	transform: scaleY(0);
+	-webkit-transform-origin: 0 0 0;
+	transform-origin: 0 0 0;
+	-webkit-transition: all 0.3s ease 0s; /*chrome ve safari*/
+	transition: all 0.3s ease 0s;
+	visibility: hidden; /*Element gizlenir ancak elementin sahip olduğu alan boşluk şeklinde sayfada görünecektir.*/
+	width: 240px;
+	z-index: 999; /*position verildiyse z-index i yüksek olan fotograf vb. üstte kalır düşük olan altta*/
+	background: #fff;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.main-menu>ul>li:hover>ul {
+	-webkit-transform: scaleY(1); /*chrome ve safari*/
+	transform: scaleY(1);
+	visibility: visible; /*nesne normal gösterilir*/
+	opacity: 1;
+}
+
+.main-menu ul>li>ul>li {
+	margin: 0px; 
+	position: relative; /*yazıyla resmi ilişkilendirdik böylece yazı resmin üstünde olabildi*/
+	display: block; /*önce ve sonra bir satır sonu*/
+}
+
+.main-menu ul>li>ul>li:hover>ul {
+	-webkit-transform: scaleY(1); /*scale değeri yardımı ile belirlene elemanın X ve Y ekseninde ölçeğini büyütebilir veya küçültebiliriz.*/
+	transform: scaleY(1);
+	visibility: visible; /*nesne normal gösterilir*/
+	opacity: 1; /*saydamlık*/
+	left: 100%;
+	top: 10px;
+}
+
+.main-menu ul>li>ul>li>a {
+	background: none !important;
+}
+
+
+.main-menu ul>li {
+	position: inherit;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav>li {
+	position: inherit;
+	display: inline-block;
+	vertical-align: middle; /*dikey olarak ortalama*/
+}
+
+/*Menu yazı yeri*/
+.menu-area {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+    display: flex;
+    justify-content: center; /*Kapsayıcı içerisindeki elemanların yatay eksende nasıl hizalanacağını belirler.*/
+}
+
+.main-menu ul.menu-area-main li {
+    margin: 0 10px;
+}
+
+/** slider **/
+/*Slider Arkaplan*/
+.banner-slider {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 815px;
+    background-size: cover;  
+}
+
+#slider_main {
+    margin-top: 70px;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+/*Slayt Resminin Boyutu*/
+#slider_main img {
+	width: 800px;
+    height: 400px;
+}
+
+/*Slider Okları*/
+#slider_main .carousel-control-prev, #slider_main .carousel-control-next {
+    width: 62px;
+    height: 60px;
+    background: #fffdfd;
+    opacity: 1; /*saydamlık*/
+    font-size: 30px;
+    color: #a91111;
+}
+
+/*ileri tuşu*/
+#slider_main a.carousel-control-next {
+    position: absolute; /*Koordinat belirleyerek sayfada bir yere yerleştirmek*/
+    left: -31px;
+    top: 55%;
+}
+/*ilan başlık*/
+.slider_cont_section h4 {
+    color: #006;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0; /*üst,sağ,alt,sol sırasıyla iç kenar boşlukları*/
+    margin: 0;
+}
+/*ilan yazı alanı*/
+.slider_cont_section p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-right: 15px; 
+    color: #19449b;
+}
+
+button:focus {
+	outline: none; /*dış çizgi özellikleri*/
+}
+
+/*Hepsini Dene Tarafını Seç*/
+.orange_color {
+	color: #ff0000;
+}
+
+/*Butonu Ortalama*/
+.center {
+    display: flex;
+    justify-content: center; /*Kapsayıcı içerisindeki elemanların yatay eksende nasıl hizalanacağını belirler.*/
+}
+
+/*kedi, köpek anasayfa yazı*/
+.blog_cont {
+    padding-top: 30px;
+}
+
+/*kedi, köpek anasayfa resim boyutu*/
+.table-hover img{
+    height: 260px;
+    width: 350px;
+}
+
+/*yorum yapma kısmı stilleri input*/
+.comment_form input {
+    width: 100%;
+    height: 75px;
+    border: solid #767575 1px;
+    margin: 10px 0 0;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffeaf9;
+}
+
+/*yorum yapma kısmı stilleri textarea*/
+.comment_form textarea {
+    width: 100%;
+    height: 185px;
+    border: solid #767575 1px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffeaf9;
+}
+
+/*Yorum butonu*/
+.comment_form button {
+    background: #e91818;
+    float: left;
+    width: 290px;
+    height: 70px;
+    margin-top: -10px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 90px; /*butonun kenarlarını yuvarlak yapa*/
+}
+/*yapılan yorumların stilleri*/
+.heading h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.contact_text h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: -5px 0 0 0;
+}
+
+.contact_text h4 {
+    color: #db2828;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.comment_blog_line {
+    margin-top: 25px;
+    padding: 0 15px;
+}
+
+/** footer **/
+/*sayfanın en alt kısmı*/
+footer {
+    background-color: rgb(104, 32, 104);
+    min-height: 350px;
+    padding: 60px 0;
+}
+
+.footer_links h3 {
+    color: rgb(245, 203, 255);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.footer_links li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer_links ol li {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+/*iletişim footer*/
+.contact_information {
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+}
+
+.contact_information li {
+    display: flex;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+/*iletişim kısmı ikonla yazı arasındaki boşluk*/
+.contact_information li span:nth-child(1) {
+    margin-right: 15px;
+}
+
+/*İletişim sayfası */
+
+.contact-bg .contactheading h3 { 
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align:center;
+    padding: 40px 0px;
+    text-transform: uppercase; /*metnin hepsini büyük harf yapma*/
+}
+
+/*Üye ol*/
+
+* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+}
+
+/* giriş ve üye ol için input değerleri */
+
+input[type=text],input[type=password], input[type=email],input[type=number] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: solid #767575 1px;
+    background-color: #ffeaf9;
+  }
+/*giriş yap, üye ol, bağış yap butonları stili */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9; /*saydamlık*/
+}
+
+.signin {
+  text-align: center;
+}
+
